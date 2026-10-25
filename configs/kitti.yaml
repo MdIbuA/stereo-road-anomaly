@@ -1,0 +1,28 @@
+# Pipeline configuration for KITTI-geometry stereo rigs.
+# Every threshold below is derived from the error model in README.md.
+sgbm:
+  min_depth_m: 3.0        # sets num_disparities
+  block_size: 5
+  uniqueness_ratio: 12
+  use_wls: true
+
+reconstruction:
+  max_depth_m: 60.0       # beyond this, depth noise exceeds any pothole
+  roi_bottom_fraction: 0.45
+  roi_side_margin: 0.12
+
+plane:
+  threshold_m: 0.03       # 3 cm inlier band
+  iterations: 500
+  sample_limit: 20000
+
+detection:
+  min_depth_below_road_m: 0.025
+  min_area_m2: 0.01
+  max_area_m2: 4.0
+  # Noise model. Re-measure disp_sigma_px on real data before trusting output.
+  disp_sigma_px: 0.25
+  candidate_n_sigma: 0.5
+  accept_n_sigma: 3.0
+  correlation_factor: 8.0
+  smooth_kernel: 5

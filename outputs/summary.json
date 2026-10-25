@@ -1,0 +1,68 @@
+{
+  "summary": {
+    "detections": 1,
+    "disparity_coverage": 0.3927,
+    "plane_inlier_ratio": 0.8808,
+    "plane_rmse_m": 0.01068,
+    "camera_height_m": 1.651,
+    "reliable_range_m": 9.52,
+    "candidate_regions": 2,
+    "rejected": {
+      "area": 0,
+      "significance": 1,
+      "empty": 0
+    },
+    "total_ms": 116.85,
+    "timings_ms": {
+      "disparity": 69.81,
+      "reproject": 10.27,
+      "plane_fit": 11.92,
+      "detect": 24.84
+    }
+  },
+  "detections": [
+    {
+      "bbox": [
+        476,
+        334,
+        123,
+        29
+      ],
+      "centroid_px": [
+        537.8443531827515,
+        347.6640657084189
+      ],
+      "depth_m": 8.092,
+      "max_depth_below_road_m": 0.076,
+      "area_m2": 0.3063,
+      "pixel_area": 2435,
+      "severity": "medium"
+    }
+  ],
+  "ground_truth": [
+    {
+      "x_m": -0.9,
+      "z_m": 8.0,
+      "depth_m": 0.09,
+      "radius_m": 0.33
+    },
+    {
+      "x_m": 0.7,
+      "z_m": 12.5,
+      "depth_m": 0.06,
+      "radius_m": 0.28
+    },
+    {
+      "x_m": -0.2,
+      "z_m": 17.0,
+      "depth_m": 0.045,
+      "radius_m": 0.24
+    },
+    {
+      "x_m": 1.1,
+      "z_m": 24.0,
+      "depth_m": 0.02,
+      "radius_m": 0.2
+    }
+  ]
+}
